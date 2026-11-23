@@ -112,7 +112,7 @@
       <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)../llc/llc;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../llc/llc;$(SolutionDir)../jsoncpp/include;$(SolutionDir)../nlohmann_json/single_include;$(SolutionDir)../rapidjson/include;</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseStandardPreprocessor>true</UseStandardPreprocessor>
     </ClCompile>
@@ -141,6 +141,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="benchmark_json.cpp" />
+    <ClCompile Include="$(SolutionDir)../jsoncpp/src/lib_json/json_reader.cpp" />
+    <ClCompile Include="$(SolutionDir)../jsoncpp/src/lib_json/json_value.cpp" />
+    <ClCompile Include="$(SolutionDir)../jsoncpp/src/lib_json/json_writer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
