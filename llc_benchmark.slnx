@@ -1,0 +1,14 @@
+﻿<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Debug-MT" />
+    <BuildType Name="Release" />
+    <BuildType Name="Release-MT" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="benchmark_json/benchmark_json.vcxproj" Id="7330ed44-565e-4943-983d-6b488dd7c3c5">
+    <BuildDependency Project="../llc/llc/llc.vcxproj" />
+  </Project>
+  <Project Path="../llc/llc/llc.vcxproj" Id="830ab681-b788-47d4-9767-ba4e0792f682" />
+</Solution>

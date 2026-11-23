@@ -1,0 +1,9 @@
+#include "llc_runtime.h"
+
+sttc ::llc::err_t benchmark_json_entry_point(::llc::SRuntimeValues & runtimeValues);
+LLC_OS_ENTRY_POINT(::benchmark_json_entry_point);
+
+sttc ::llc::err_t benchmark_json_entry_point(::llc::SRuntimeValues & runtimeValues) {
+	(void)runtimeValues;
+	rtrn 0;
+}
